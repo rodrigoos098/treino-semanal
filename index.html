@@ -21,9 +21,14 @@
         }
         .nav-btn-active {
             background-color: #14b8a6; /* teal-500 */
-            color: white;
+            color: white; /* Cor do texto branca para maior contraste */
             transform: translateY(-2px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-link {
+            color: #06b6d4; /* cyan-500 */
+            font-weight: 600;
+            text-decoration: underline;
         }
     </style>
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,16 +63,17 @@
                             <tr>
                                 <th class="p-4 rounded-tl-lg">Exercício</th>
                                 <th class="p-4">Séries x Reps</th>
-                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                                <th class="p-4">Músculos Principais Trabalhados</th>
+                                <th class="p-4 rounded-tr-lg">Vídeo Execução</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-200">
-                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (Grande Dorsal), Bíceps</td></tr>
-                            <tr><td class="p-4 font-semibold">Remada Baixa</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Romboides, Trapézio</td></tr>
-                            <tr><td class="p-4 font-semibold">Puxador Fechado (Supinado)</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (ênfase na porção inferior), Bíceps</td></tr>
-                            <tr><td class="p-4 font-semibold">Crucifixo Invertido na Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Posterior, Trapézio</td></tr>
-                            <tr><td class="p-4 font-semibold">Rosca Direta com Halteres</td><td class="p-4">3 x 12</td><td class="p-4">Bíceps Braquial, Braquial</td></tr>
-                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (Grande Dorsal), Bíceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Puxador+Frente+Aberto+Pronado+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Remada Baixa</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Romboides, Trapézio</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Remada+Baixa+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Puxador Fechado (Supinado)</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (ênfase na porção inferior), Bíceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Puxador+Fechado+Supinado+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Crucifixo Invertido na Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Posterior, Trapézio</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Crucifixo+Invertido+na+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Direta com Halteres</td><td class="p-4">3 x 12</td><td class="p-4">Bíceps Braquial, Braquial</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Rosca+Direta+com+Halteres+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Rosca+Martelo+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -83,17 +89,18 @@
                             <tr>
                                 <th class="p-4 rounded-tl-lg">Exercício</th>
                                 <th class="p-4">Séries x Reps</th>
-                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                                <th class="p-4">Músculos Principais Trabalhados</th>
+                                <th class="p-4 rounded-tr-lg">Vídeo Execução</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-200">
-                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral, Deltóide Anterior, Tríceps</td></tr>
-                            <tr><td class="p-4 font-semibold">Supino Inclinado Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Superior, Deltóide Anterior, Tríceps</td></tr>
-                            <tr><td class="p-4 font-semibold">Voador</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Maior (Isolamento)</td></tr>
-                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial (Ombro)</td></tr>
-                            <tr><td class="p-4 font-semibold">Elevação Frontal</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Anterior</td></tr>
-                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
-                            <tr><td class="p-4 font-semibold">Tríceps Corda</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
+                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral, Deltóide Anterior, Tríceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Supino+Reto+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Supino Inclinado Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Superior, Deltóide Anterior, Tríceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Supino+Inclinado+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Voador</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Maior (Isolamento)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Voador+máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial (Ombro)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Elevação+Lateral+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Frontal</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Anterior</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Elevação+Frontal+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Tríceps+Pulley+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Corda</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Tríceps+Corda+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -109,19 +116,20 @@
                             <tr>
                                 <th class="p-4 rounded-tl-lg">Exercício</th>
                                 <th class="p-4">Séries x Reps</th>
-                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                                <th class="p-4">Músculos Principais Trabalhados</th>
+                                <th class="p-4 rounded-tr-lg">Vídeo Execução</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-200">
-                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td></tr>
-                            <tr><td class="p-4 font-semibold">Leg Horizontal</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos, Isquiotibiais</td></tr>
-                            <tr><td class="p-4 font-semibold">Cadeira Extensora</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps (Isolamento)</td></tr>
-                            <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td></tr>
-                            <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td></tr>
-                            <tr><td class="p-4 font-semibold">Cadeira Adutora</td><td class="p-4">3 x 12</td><td class="p-4">Músculos Adutores</td></tr>
-                            <tr><td class="p-4 font-semibold">Panturrilha em Pé</td><td class="p-4">3 x 15</td><td class="p-4">Gastrocnêmio</td></tr>
-                            <tr><td class="p-4 font-semibold">Prancha (Sugestão Core)</td><td class="p-4">3 x 45-60 seg</td><td class="p-4">Core (Abdômen, Lombar)</td></tr>
-                            <tr><td class="p-4 font-semibold">Abdominal (Sugestão Core)</td><td class="p-4">3 x 15</td><td class="p-4">Abdômen</td></tr>
+                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Agachamento+Hack+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Leg Horizontal</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos, Isquiotibiais</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Leg+Press+Horizontal+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Extensora</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps (Isolamento)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Cadeira+Extensora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Mesa+Flexora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Cadeira+Flexora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Adutora</td><td class="p-4">3 x 12</td><td class="p-4">Músculos Adutores</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Cadeira+Adutora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Panturrilha em Pé</td><td class="p-4">3 x 15</td><td class="p-4">Gastrocnêmio</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Panturrilha+em+Pé+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Prancha (Sugestão Core)</td><td class="p-4">3 x 45-60 seg</td><td class="p-4">Core (Abdômen, Lombar)</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Prancha+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Abdominal (Sugestão Core)</td><td class="p-4">3 x 15</td><td class="p-4">Abdômen</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Abdominal+máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -137,16 +145,17 @@
                             <tr>
                                 <th class="p-4 rounded-tl-lg">Exercício</th>
                                 <th class="p-4">Séries x Reps</th>
-                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                                <th class="p-4">Músculos Principais Trabalhados</th>
+                                <th class="p-4 rounded-tr-lg">Vídeo Execução</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-200">
-                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peito, Tríceps, Deltóide Anterior</td></tr>
-                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Bíceps</td></tr>
-                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td></tr>
-                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial</td></tr>
-                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
-                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peito, Tríceps, Deltóide Anterior</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Supino+Reto+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Bíceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Puxador+Frente+Aberto+Pronado+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Agachamento+Hack+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Elevação+Lateral+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Tríceps+Pulley+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Rosca+Martelo+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -165,16 +174,16 @@
                         <div class="overflow-x-auto">
                            <table class="w-full text-left workout-table">
                                  <thead>
-                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4 rounded-tr-lg">Séries x Reps</th></tr>
+                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4">Séries x Reps</th><th class="p-4 rounded-tr-lg">Vídeo Execução</th></tr>
                                 </thead>
                                 <tbody class="divide-y divide-slate-200">
-                                    <tr><td class="p-4 font-semibold">Desenvolvimento Máquina</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Remada Alta</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Encolhimento</td><td class="p-4">3 x 15</td></tr>
-                                    <tr><td class="p-4 font-semibold">Remada Articulada</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Tríceps Máquina</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Rosca Scott</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Panturrilha Sentado</td><td class="p-4">3 x 15</td></tr>
+                                    <tr><td class="p-4 font-semibold">Desenvolvimento Máquina</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Desenvolvimento+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Remada Alta</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Remada+Alta+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Encolhimento</td><td class="p-4">3 x 15</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Encolhimento+com+Halteres+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Remada Articulada</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Remada+Articulada+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Tríceps Máquina</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Tríceps+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Rosca Scott</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Rosca+Scott+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Panturrilha Sentado</td><td class="p-4">3 x 15</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Panturrilha+Sentado+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -185,16 +194,16 @@
                          <div class="overflow-x-auto">
                            <table class="w-full text-left workout-table">
                                  <thead>
-                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4 rounded-tr-lg">Séries x Reps</th></tr>
+                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4">Séries x Reps</th><th class="p-4 rounded-tr-lg">Vídeo Execução</th></tr>
                                 </thead>
                                 <tbody class="divide-y divide-slate-200">
-                                    <tr><td class="p-4 font-semibold">Elevação Pélvica no Solo</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Glúteo Máquina</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Agachamento Sumô</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td></tr>
-                                    <tr><td class="p-4 font-semibold">Panturrilha no Leg Horizontal</td><td class="p-4">3 x 15</td></tr>
-                                    <tr><td class="p-4 font-semibold">Abdução na Máquina/Cabo</td><td class="p-4">3 x 15</td></tr>
+                                    <tr><td class="p-4 font-semibold">Elevação Pélvica no Solo</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Elevação+Pélvica+no+Solo+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Glúteo Máquina</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Glúteo+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Agachamento Sumô</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Agachamento+Sumô+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Cadeira+Flexora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Mesa+Flexora+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Panturrilha no Leg Horizontal</td><td class="p-4">3 x 15</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Panturrilha+no+Leg+Horizontal+execução" target="_blank" class="video-link">Assistir</a></td></tr>
+                                    <tr><td class="p-4 font-semibold">Abdução na Máquina/Cabo</td><td class="p-4">3 x 15</td><td class="p-4"><a href="https://www.youtube.com/results?search_query=Abdução+na+Máquina+execução" target="_blank" class="video-link">Assistir</a></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -225,11 +234,11 @@
             ];
 
             function showDay(dayIndex) {
-                // Hide all content divs and remove active class from all buttons
+                // Esconder todos os conteúdos e remover a classe ativa de todos os botões
                 contentDivs.forEach(div => div.classList.add('hidden'));
                 buttons.forEach(btn => btn.classList.remove('nav-btn-active'));
 
-                // Show the selected day's content and add active class to its button
+                // Mostrar o conteúdo do dia selecionado e adicionar a classe ativa ao botão
                 if (contentDivs[dayIndex]) {
                     contentDivs[dayIndex].classList.remove('hidden');
                 }
@@ -244,7 +253,7 @@
                 });
             });
 
-            // Show Day 1 by default on page load
+            // Mostrar o Dia 1 por padrão ao carregar a página
             showDay(0);
         });
     </script>
