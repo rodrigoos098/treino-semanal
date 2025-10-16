@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Treino Semanal: Rodrigo & Sabrina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Calm Fitness (Slate Gray, Teal, White) -->
+    <!-- Application Structure Plan: A tab-based navigation system using buttons for each day (Dia 1-5). Clicking a button reveals the corresponding day's workout plan. This structure was chosen for its simplicity and direct, task-oriented user flow, allowing users to quickly access the specific information they need without scrolling. Day 5, the individual focus day, uses a two-column layout to clearly separate the two different workouts. -->
+    <!-- Visualization & Content Choices: The core workout plan (Report Info) is organized into daily schedules. The Goal is to Inform and Organize this schedule. The chosen Presentation Method is styled HTML tables for clarity and structure. The main Interaction is clicking the day-selector buttons, which triggers JavaScript to show/hide the relevant content blocks. This is justified as the most direct and user-friendly way to present a structured daily plan. All styling is done with Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .workout-table th {
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        .nav-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-btn-active {
+            background-color: #14b8a6; /* teal-500 */
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-slate-900">🏋️‍♀️ Plano de Treino Semanal</h1>
+            <p class="text-lg text-slate-600 mt-2">Rodrigo & Sabrina</p>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
+            <button id="btn-day1" class="nav-btn w-full sm:w-auto text-center py-3 px-6 bg-white rounded-lg shadow-md font-semibold text-slate-700 hover:bg-teal-400 hover:text-white">Dia 1: PULL</button>
+            <button id="btn-day2" class="nav-btn w-full sm:w-auto text-center py-3 px-6 bg-white rounded-lg shadow-md font-semibold text-slate-700 hover:bg-teal-400 hover:text-white">Dia 2: PUSH</button>
+            <button id="btn-day3" class="nav-btn w-full sm:w-auto text-center py-3 px-6 bg-white rounded-lg shadow-md font-semibold text-slate-700 hover:bg-teal-400 hover:text-white">Dia 3: PERNAS</button>
+            <button id="btn-day4" class="nav-btn w-full sm:w-auto text-center py-3 px-6 bg-white rounded-lg shadow-md font-semibold text-slate-700 hover:bg-teal-400 hover:text-white">Dia 4: FULL BODY</button>
+            <button id="btn-day5" class="nav-btn w-full sm:w-auto text-center py-3 px-6 bg-white rounded-lg shadow-md font-semibold text-slate-700 hover:bg-teal-400 hover:text-white">Dia 5: FOCO</button>
+        </nav>
+        
+        <main id="workout-content">
+            <!-- Dia 1 Content -->
+            <div id="day1-content" class="workout-day-content bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-4 text-teal-600">DIA 1: PULL (Costas e Bíceps) - TREINO CONJUNTO</h2>
+                 <p class="text-slate-600 mb-6">Este treino foca em puxar, fortalecendo as costas para dar largura e espessura, e desenvolvendo o bíceps. É a base para uma postura forte e braços bem definidos.</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left workout-table">
+                        <thead>
+                            <tr>
+                                <th class="p-4 rounded-tl-lg">Exercício</th>
+                                <th class="p-4">Séries x Reps</th>
+                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (Grande Dorsal), Bíceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Remada Baixa</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Romboides, Trapézio</td></tr>
+                            <tr><td class="p-4 font-semibold">Puxador Fechado (Supinado)</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso (ênfase na porção inferior), Bíceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Crucifixo Invertido na Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Posterior, Trapézio</td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Direta com Halteres</td><td class="p-4">3 x 12</td><td class="p-4">Bíceps Braquial, Braquial</td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dia 2 Content -->
+            <div id="day2-content" class="workout-day-content bg-white p-6 rounded-xl shadow-lg hidden">
+                <h2 class="text-2xl font-bold mb-4 text-teal-600">DIA 2: PUSH (Peito, Ombro e Tríceps) - TREINO CONJUNTO</h2>
+                 <p class="text-slate-600 mb-6">O dia de empurrar trabalha a parte frontal superior do corpo. Foca em construir um peitoral forte, ombros arredondados e tríceps potentes, essenciais para movimentos de força.</p>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-left workout-table">
+                         <thead>
+                            <tr>
+                                <th class="p-4 rounded-tl-lg">Exercício</th>
+                                <th class="p-4">Séries x Reps</th>
+                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral, Deltóide Anterior, Tríceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Supino Inclinado Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Superior, Deltóide Anterior, Tríceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Voador</td><td class="p-4">3 x 12</td><td class="p-4">Peitoral Maior (Isolamento)</td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial (Ombro)</td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Frontal</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Anterior</td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Corda</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dia 3 Content -->
+            <div id="day3-content" class="workout-day-content bg-white p-6 rounded-xl shadow-lg hidden">
+                <h2 class="text-2xl font-bold mb-4 text-teal-600">DIA 3: PERNAS e CORE (Volume 1) - TREINO CONJUNTO</h2>
+                 <p class="text-slate-600 mb-6">Este é o primeiro treino de pernas da semana, focado em construir a base de força e volume nos quadríceps, posteriores e glúteos. O trabalho de core adiciona estabilidade e força ao tronco.</p>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-left workout-table">
+                         <thead>
+                            <tr>
+                                <th class="p-4 rounded-tl-lg">Exercício</th>
+                                <th class="p-4">Séries x Reps</th>
+                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td></tr>
+                            <tr><td class="p-4 font-semibold">Leg Horizontal</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos, Isquiotibiais</td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Extensora</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps (Isolamento)</td></tr>
+                            <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td><td class="p-4">Isquiotibiais (Posterior da Coxa)</td></tr>
+                            <tr><td class="p-4 font-semibold">Cadeira Adutora</td><td class="p-4">3 x 12</td><td class="p-4">Músculos Adutores</td></tr>
+                            <tr><td class="p-4 font-semibold">Panturrilha em Pé</td><td class="p-4">3 x 15</td><td class="p-4">Gastrocnêmio</td></tr>
+                            <tr><td class="p-4 font-semibold">Prancha (Sugestão Core)</td><td class="p-4">3 x 45-60 seg</td><td class="p-4">Core (Abdômen, Lombar)</td></tr>
+                            <tr><td class="p-4 font-semibold">Abdominal (Sugestão Core)</td><td class="p-4">3 x 15</td><td class="p-4">Abdômen</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dia 4 Content -->
+            <div id="day4-content" class="workout-day-content bg-white p-6 rounded-xl shadow-lg hidden">
+                <h2 class="text-2xl font-bold mb-4 text-teal-600">DIA 4: FULL BODY (Manutenção) - TREINO CONJUNTO</h2>
+                <p class="text-slate-600 mb-6">Este dia serve como um estímulo de corpo inteiro para manter a frequência de treino elevada, promovendo a recuperação ativa e garantindo que todos os músculos recebam atenção durante a semana.</p>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-left workout-table">
+                        <thead>
+                            <tr>
+                                <th class="p-4 rounded-tl-lg">Exercício</th>
+                                <th class="p-4">Séries x Reps</th>
+                                <th class="p-4 rounded-tr-lg">Músculos Principais Trabalhados</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="p-4 font-semibold">Supino Reto Máquina</td><td class="p-4">3 x 12</td><td class="p-4">Peito, Tríceps, Deltóide Anterior</td></tr>
+                            <tr><td class="p-4 font-semibold">Puxador Frente Aberto Pronado</td><td class="p-4">3 x 12</td><td class="p-4">Latíssimo do Dorso, Bíceps</td></tr>
+                            <tr><td class="p-4 font-semibold">Agachamento Hack</td><td class="p-4">3 x 12</td><td class="p-4">Quadríceps, Glúteos</td></tr>
+                            <tr><td class="p-4 font-semibold">Elevação Lateral</td><td class="p-4">3 x 12</td><td class="p-4">Deltóide Medial</td></tr>
+                            <tr><td class="p-4 font-semibold">Tríceps Pulley</td><td class="p-4">3 x 12</td><td class="p-4">Tríceps Braquial</td></tr>
+                            <tr><td class="p-4 font-semibold">Rosca Martelo</td><td class="p-4">3 x 12</td><td class="p-4">Braquial, Braquiorradial, Bíceps</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dia 5 Content -->
+            <div id="day5-content" class="workout-day-content hidden">
+                 <div class="text-center mb-6">
+                     <h2 class="text-2xl font-bold text-teal-600">DIA 5: FOCO INDIVIDUAL</h2>
+                     <p class="text-slate-600 mt-1">Este é o dia de focar nos objetivos específicos. Rodrigo trabalha para adicionar volume em músculos complementares, enquanto Sabrina maximiza o estímulo em pernas e glúteos.</p>
+                 </div>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Foco Rodrigo -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 text-center">🚀 FOCO RODRIGO</h3>
+                        <div class="overflow-x-auto">
+                           <table class="w-full text-left workout-table">
+                                 <thead>
+                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4 rounded-tr-lg">Séries x Reps</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200">
+                                    <tr><td class="p-4 font-semibold">Desenvolvimento Máquina</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Remada Alta</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Encolhimento</td><td class="p-4">3 x 15</td></tr>
+                                    <tr><td class="p-4 font-semibold">Remada Articulada</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Tríceps Máquina</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Rosca Scott</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Panturrilha Sentado</td><td class="p-4">3 x 15</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Foco Sabrina -->
+                     <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 text-center">🔥 FOCO SABRINA</h3>
+                         <div class="overflow-x-auto">
+                           <table class="w-full text-left workout-table">
+                                 <thead>
+                                    <tr><th class="p-4 rounded-tl-lg">Exercício</th><th class="p-4 rounded-tr-lg">Séries x Reps</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200">
+                                    <tr><td class="p-4 font-semibold">Elevação Pélvica no Solo</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Glúteo Máquina</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Agachamento Sumô</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Cadeira Flexora</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Mesa Flexora</td><td class="p-4">3 x 12</td></tr>
+                                    <tr><td class="p-4 font-semibold">Panturrilha no Leg Horizontal</td><td class="p-4">3 x 15</td></tr>
+                                    <tr><td class="p-4 font-semibold">Abdução na Máquina/Cabo</td><td class="p-4">3 x 15</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = [
+                document.getElementById('btn-day1'),
+                document.getElementById('btn-day2'),
+                document.getElementById('btn-day3'),
+                document.getElementById('btn-day4'),
+                document.getElementById('btn-day5')
+            ];
+
+            const contentDivs = [
+                document.getElementById('day1-content'),
+                document.getElementById('day2-content'),
+                document.getElementById('day3-content'),
+                document.getElementById('day4-content'),
+                document.getElementById('day5-content')
+            ];
+
+            function showDay(dayIndex) {
+                // Hide all content divs and remove active class from all buttons
+                contentDivs.forEach(div => div.classList.add('hidden'));
+                buttons.forEach(btn => btn.classList.remove('nav-btn-active'));
+
+                // Show the selected day's content and add active class to its button
+                if (contentDivs[dayIndex]) {
+                    contentDivs[dayIndex].classList.remove('hidden');
+                }
+                if (buttons[dayIndex]) {
+                    buttons[dayIndex].classList.add('nav-btn-active');
+                }
+            }
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    showDay(index);
+                });
+            });
+
+            // Show Day 1 by default on page load
+            showDay(0);
+        });
+    </script>
+
+</body>
+</html>
